@@ -11,8 +11,8 @@ const MailboxDetails = ({ mailboxes }) => {
         <div>
             {selectedBox ? (
                 <>
-                    <h2>Mailbox {selectedBox._id}</h2>
-                    {/* <p>Box Number: {selectedBox._id}</p> */}
+                    <h1>Mailbox {selectedBox._id}</h1>
+                    <h3>Details</h3>
                     <p>Boxholder: {selectedBox.boxOwner}</p>
                     <p>Box Size: {selectedBox.boxSize}</p>
                 </>

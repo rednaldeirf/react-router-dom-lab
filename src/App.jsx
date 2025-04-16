@@ -4,17 +4,17 @@ import NavBar from './components/NavBar/NavBar';
 import MailboxForm from './components/MailboxForm/MailboxForm';
 import MailboxList from './components/MailboxList/MailboxList';
 import MailboxDetails from './components/MailboxDetails/MailboxDetails';
+import './styles.css';
 
 const App = () => {
   const [mailboxes, setMailboxes] = useState([]);
 
-  const addBox = (formData) => {
-    const newMailbox = {
-      _id: mailboxes.length + 1, // Assigning a unique box number
-      ...formData,
-    };
-    setMailboxes([...mailboxes, newMailbox]);
-  };
+  const addBox = (newMailbox) => {
+    const newId = mailboxes.length + 1; 
+    const mailboxWithId = { _id: newId, ...newMailbox };
+    setMailboxes((prevMailboxes) => [...prevMailboxes, mailboxWithId]);
+};
+
 
   return (
     <Router>

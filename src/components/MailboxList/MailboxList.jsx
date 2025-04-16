@@ -6,7 +6,7 @@ const MailboxList = ({ mailboxes }) => {
     <div>
       {mailboxes.map((mailbox) => (
         <Link key={mailbox._id} to={`/mailboxes/${mailbox._id}`} className="mail-box">
-          <div>{mailbox._id}</div>
+          <div>Mailbox {mailbox._id}</div>
         </Link>
       ))}
     </div>
