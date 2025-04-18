@@ -1,14 +1,18 @@
 .mailbox-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
+    display: flex; /* Use flexbox for layout */
+    flex-direction: row; /* Arrange mailboxes in a row */
+    flex-wrap: wrap; /* Allow wrapping to a new line if needed */
+    gap: 10px; /* Space between each mailbox */
+    padding: 20px; /
+    
 }
 
 .mail-box {
     width: 100px;
     height: 100px;
     border: 1px solid #000;
-    display: flex;
+    display: flex;        /* Use flexbox for layout */
+    flex-direction: row; 
     align-items: center;
     justify-content: center;
 }
